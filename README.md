@@ -25,7 +25,7 @@ The changes to the original binary can be easily reviewed by comparing the origi
 HxD - https://mh-nexus.de/en/hxd/
 
 ## Additional Observations
-1. Windows Defender virus scanner falsely reports the modified .exe as "Trojan:Win32/Bearfoos.B!ml". Probably because I manually edited the original .exe binary. You will need to explicitly tell Windows it's allowed to run this hand-patched executable. This needs to be done just once. It's that blue "Don't run" pop-up you'll get after extracting the file from the .zip and running. From there, you can click on the "More info" link, then give Windows permission to run the file. Wish I knew how to fix that! You could also add this executable to your virus scanner exclusion list.
+1. Because I manually edited the original .exe binary, you will need to explicitly tell Windows it's allowed to run this hand-patched executable. This needs to be done just once. It's that blue "Don't run" pop-up you'll get after extracting the file from the .zip and running. From there, you can click on the "More info" link, then give Windows permission to run the file. Wish I knew how to fix that!
 
 2. If you use this modifed utility to write settings to either a file or directly to the device which normally would have been disallowed by the original configurator but then use the original configurator to read the configuration from the device or file, the settings will be retrieved but cannot be written back to either the device or a file. This is, of course, because those relaxed settings will be out of range according to the original configurator.
 
